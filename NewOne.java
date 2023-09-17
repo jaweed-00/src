@@ -9,8 +9,7 @@ Random r = new Random();
 Random f = new Random();
 Scanner in = new Scanner(System.in);
 String playagain;
-if (r.equals(f)) { 
-	System.out.println("YOU WON!!!");
+
 do {
 	System.out.println("throwing the dice");
 	System.out.println(r.nextInt(6)+ 1);
@@ -18,9 +17,8 @@ do {
 	System.out.println(f.nextInt(6)+ 1);
 	System.out.println("playagain (y/n)");
 	playagain = in.nextLine();
-
 	
 } while (playagain.equals("y"));
-}
+	
 }
 }
