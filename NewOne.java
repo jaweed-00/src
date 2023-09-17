@@ -9,7 +9,7 @@ Random r = new Random();
 Random f = new Random();
 Scanner in = new Scanner(System.in);
 String playagain;
-
+ //we ask the player to throw two dices  
 do {
 	System.out.println("throwing the dice");
 	System.out.println(r.nextInt(6)+ 1);
@@ -17,8 +17,10 @@ do {
 	System.out.println(f.nextInt(6)+ 1);
 	System.out.println("playagain (y/n)");
 	playagain = in.nextLine();
-	
+	// the game can continue 
 } while (playagain.equals("y"));
-	
+	if (playagain.equals("n")) {
+		System.out.println("thank you for your playing");
+	}
 }
 }
